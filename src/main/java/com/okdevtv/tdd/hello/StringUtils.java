@@ -5,7 +5,7 @@ import java.util.Locale;
 
 public class StringUtils {
 
-	private StringUtils() {
+	StringUtils() {
 		throw new IllegalStateException("Utility class");
 	  }
 	  

@@ -15,13 +15,10 @@ public class StringUtilsTest {
 		assertEquals("1,200,000", StringUtils.comma(1200000));
 	}
 
-	@Test
-	public void testException(){
-		try{
-			new StringUtils();
-			fail("Expected exception");
-		}catch{
-			
-		}
+	@Test(expected = IllegalStateException.class)
+	public void testException() {
+		new StringUtils();
+		fail("Expected exception");
 	}
+
 }
