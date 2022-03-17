@@ -3,6 +3,7 @@ package com.okdevtv.tdd.hello;
 import static org.junit.Assert.*;
 
 import org.junit.Test;
+import org.junit.experimental.theories.suppliers.TestedOn;
 
 public class StringUtilsTest {
 
@@ -14,5 +15,13 @@ public class StringUtilsTest {
 		assertEquals("1,200,000", StringUtils.comma(1200000));
 	}
 
-
+	@Test
+	public void testException(){
+		try{
+			new StringUtils();
+			fail("Expected exception");
+		}catch{
+			
+		}
+	}
 }
